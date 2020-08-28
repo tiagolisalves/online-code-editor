@@ -11,7 +11,7 @@ At the project root execute `npm install`
 
 ### Execute Application
 
-Exeute `npm start` and head over to http://localhost:1234
+Execute `npm start` and head over to http://localhost:1234
 
 ### Execute unit tests
 
