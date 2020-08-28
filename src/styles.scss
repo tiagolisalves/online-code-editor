@@ -1,0 +1,90 @@
+body {
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    background-color: #23241f;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+}
+
+.directory {
+    margin-top: 7px;
+    margin-left: 15px;
+    .file {
+        margin-top: 7px;
+        margin-left: 15px;
+        &:hover,
+        .current-file {
+            background-color: #75715e;
+        }
+    }
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+main {
+    .side-bar-container {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+        height: 100%;
+        position: fixed;
+        padding-top: 10px;
+        background-color: #252526;
+        .side-bar-title {
+            font-weight: 500;
+            padding-left: 10px;
+            font-size: 16px;
+        }
+
+        .side-bar {
+            margin-top: 20px;
+            width: 95%;
+            // margin: auto;
+            // outline: 2px solid yellow;
+            // border-right: 1px double gray;
+        }
+    }
+    .editor-container {
+        width: 80%;
+        display: inline-block;
+        height: 100%;
+        left: 20%;
+        position: fixed;
+        .actions-bar {
+            float: right;
+            .action-btn {
+                margin-right: 10px;
+            }
+        }
+        .current-file-name {
+            margin: 10px 0 0 10px;
+            display: inline-block;
+            padding: 10px;
+            background-color: #23241f;
+        }
+        .editor-bar {
+            background-color: #2d2c2c;
+        }
+        .editor-area {
+            overflow: auto;
+            height: 100vh;
+            max-height: fit-content;
+        }
+    }
+}
+
+.directory-icon,
+.file-icon {
+    vertical-align: middle;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.directory-name {
+    cursor: pointer;
+}
+
+.clickable {
+    cursor: pointer;
+}

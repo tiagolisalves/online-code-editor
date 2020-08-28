@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should get filetree from parent 1`] = `
+<div
+  className="editor-area"
+  contentEditable="true"
+  onInput={[Function]}
+  suppressContentEditableWarning={true}
+>
+  <pre>
+    <code>
+      /*
+ * Copyright 2012 Veezoo, Inc.
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+package com.veezoo.main;
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Collections;
+
+import javax.annotation.Nullable;
+import javax.inject.Singleton;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+/**
+ *
+ * A default implementation of Main server as required by
+ * {@link MainPropertyFactory}.
+ *
+ */
+@Singleton
+public class Main implements AbstractMain {
+    private static final String TEST = "test";
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
+    private static final MainPropertyFactory configInstance = com.veezoo.Main.MainPropertyFactory
+            .getInstance();
+    private static final int TIME_TO_WAIT_FOR_GREETING = 30000;
+
+    public static void main(String[] args) {
+        // do nothing
+    }
+
+}
+    </code>
+  </pre>
+</div>
+`;

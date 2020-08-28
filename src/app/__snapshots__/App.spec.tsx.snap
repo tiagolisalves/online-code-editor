@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should render 'App' 1`] = `
+<div
+  className="app-container"
+>
+  <main>
+    <div
+      className="side-bar-container"
+    >
+      <div
+        className="side-bar-title"
+      >
+        EXPLORER
+      </div>
+      <div
+        className="side-bar"
+      >
+        <span>
+          Loading...
+        </span>
+      </div>
+    </div>
+    <div
+      className="editor-container"
+    >
+      <div />
+      <div
+        className="editor-area"
+        contentEditable="true"
+        onInput={[Function]}
+        suppressContentEditableWarning={true}
+      >
+        <pre>
+          <code />
+        </pre>
+      </div>
+    </div>
+  </main>
+</div>
+`;
